@@ -1,2 +1,0 @@
-# MySite
-Start my site
