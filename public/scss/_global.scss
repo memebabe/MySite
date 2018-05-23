@@ -9,17 +9,18 @@ body {
 
 .region {
     display: block;
-    margin-left: 2px;
-    margin-right: 2px;
+    width: auto;
     padding-top: 0.35em;
     padding-bottom: 0.625em;
     padding-left: 0.75em;
     padding-right: 0.75em;
     border: groove 2px;
+    text-align: center;
 
     legend {
-        padding: 0px 5px 0px 5px;
+        padding: 0px 5px;
         width: auto;
         font-weight: bold;
+        text-align: left;
     }
 }
