@@ -22,3 +22,7 @@ function create_post() {
 
     return post;
 }
+
+$(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip(); 
+});

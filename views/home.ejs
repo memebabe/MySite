@@ -20,19 +20,28 @@
     <% include menu %>
     <div class="container">
         <div class="new">
-            
+            <fieldset class="region">
+                <legend>Mới cập nhật</legend>
+                <% if (typeof posts !== "undefined" &&
+                posts.length > 0)
+                {
+                    posts.forEach(function(post) { %>
+                        <div class="post">
+                            <img src="<%=post['image']%>" />
+                            <a href="<%=post['href']%>"
+                                data-toggle="tooltip" title="<%=post['title']%>">
+                                <%=post['title']%>
+                            </a>
+                        </div>
+                <% })} %>
+            </fieldset>
         </div>
         <div class="favorite">
-
+            <fieldset class="region">
+                <legend>Được ưa thích</legend>
+            </fieldset>
         </div>
-        
     </div>
-    <p><%=images.length%></p>
-    <% if (typeof images !== "undefined" &&
-        images.length > 0)
-       {
-        images.forEach(function(image) { %>
-            <img src="<%=image%>" ></a>
-    <% })} %>
+    <% include footer %>
 </body>
 </html>

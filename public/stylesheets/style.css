@@ -1,130 +1,71 @@
-/* Các CSS này dành cho toàn bộ website và desktop */
-#content .post {
-    display: inline-block;
-    /* float: left; */
-    margin: 1.5em auto;
-    max-width: 180px;
-    height: 130px;
-    padding: 5px;
-    text-align: left;
-}
-
-#content .post img {
-    max-width: 100%;
-}
-
-#content .post a {
-    line-height: 20px;
-    font-size: 15px;
-}
-
-#content {
-    text-align: center;
-}
-
-/* VIEW */
-#view {
-    float: left;
-    width: 100%;
-    text-align: center;
-}
-
-#view img {
-    width: 100%;
-    padding-top: 15px;
-}
-
-#view p {
-    width: 100%;
-    padding-top: 10px;
-    text-align: left;
-}
-
-/* vertical suggest posts */
-#ver-suggest-posts {
-    float: right;
-}
-
 #menu #collapsibleNavId {
+  position: absolute;
+  top: 50px;
+  left: 0px;
+  z-index: 10;
+  background-color: white;
+  width: 100%;
+  border: 1px solid; }
+
+.post {
+  display: inline-block;
+  margin: 10px 5px;
+  width: 150px;
+  height: 250px;
+  text-align: left;
+  position: relative;
+  border: solid 1px silver;
+  background-color: rgba(0, 0, 0, 0.7); }
+  .post img {
+    max-width: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto; }
+  .post a {
+    position: absolute;
+    display: -webkit-box;
+    text-align: center;
+    bottom: 0px;
+    padding: 2px 5px;
+    width: 100%;
+    font-size: 15px;
+    line-height: 20px;
+    max-height: 50px;
+    word-wrap: break-word;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2; }
+
+@media all and (min-width: 1024px) {
+  #menu #collapsibleNavId {
     position: absolute;
     top: 50px;
-    left: 0px;
+    left: 10px;
     z-index: 10;
-    background-color: hsla(100, 100%, 100%, 1);
+    background-color: white;
     width: 100%;
-    border: 1px solid;
-}
-  
- /* Dành cho điện thoại */
-@media all and (min-width: 320px) {
-    #item1, #item2 {
-        display: block;
-    }
+    border: 1px solid; } }
+body {
+  background-color: #fdfbde; }
 
-    #item3, #item4, #item5, #item6 {
-        display: none;
-    }
+.footer {
+  text-align: center;
+  border-top: solid 1px black; }
 
-    #dr-item1, #dr-item2{
-        display: none;
-    }
+.region {
+  display: block;
+  margin-left: 2px;
+  margin-right: 2px;
+  padding-top: 0.35em;
+  padding-bottom: 0.625em;
+  padding-left: 0.75em;
+  padding-right: 0.75em;
+  border: groove 2px; }
+  .region legend {
+    padding: 0px 5px 0px 5px;
+    width: auto;
+    font-weight: bold; }
 
-    /* #dr-item3, #dr-item4, #dr-item5,
-    #dr-item6, #dr-menu {
-        visibility: visible;
-    } */
-}
- 
-/* Dành cho máy tính bảng chiều dọc */
-@media all and (min-width: 600px) {
-    #item1, #item2, #item3 {
-        display: block;
-    }
-
-    #item4, #item5, #item6 {
-        display: none;
-    }
-
-    #dr-item1, #dr-item2, #dr-item3{
-        display: none;
-    }
-
-    /* #dr-item4, #dr-item5, #dr-item6,
-    #dr-menu {
-        visibility: visible;
-    } */
-}
- 
-/* Dành cho máy tính bảng chiều ngang */
-@media all and (min-width: 1024px) {
-    #item1, #item2, #item3, #item4 {
-        display: block;
-    }
-
-    #item5, #item6 {
-        display: none;
-    }
-
-    #dr-item1, #dr-item2, #dr-item3, 
-    #dr-item4{
-        display: none;
-    }
-
-    /* #dr-item5, #dr-item6, #dr-menu {
-        visibility: visible;
-    } */
-}
- 
-/* Dành cho màn hình desktop */
-@media all and (min-width: 1280px) {
-    #item1, #item2, #item3, #item4,
-    #item5, #item6 {
-        display: block;
-    }
-
-    #dr-item1, #dr-item2, #dr-item3, 
-    #dr-item4, #dr-item5, #dr-item6,
-    #dr-menu{
-        display: none;
-    }
-}
+/*# sourceMappingURL=style.css.map */

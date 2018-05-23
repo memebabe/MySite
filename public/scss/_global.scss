@@ -1,0 +1,25 @@
+body {
+    background-color: rgb(253, 251, 222);
+}
+
+.footer {
+    text-align: center;
+    border-top: solid 1px black;
+}
+
+.region {
+    display: block;
+    margin-left: 2px;
+    margin-right: 2px;
+    padding-top: 0.35em;
+    padding-bottom: 0.625em;
+    padding-left: 0.75em;
+    padding-right: 0.75em;
+    border: groove 2px;
+
+    legend {
+        padding: 0px 5px 0px 5px;
+        width: auto;
+        font-weight: bold;
+    }
+}
