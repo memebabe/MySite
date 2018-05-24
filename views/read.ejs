@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/stylesheets/bootstrap.min.css">
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <title>Title</title>
+</head>
+<body>
+    <% include menu %>
+    <div class="container">
+        <% if (typeof texts !== "undefined" &&
+        texts.lenght > 0) { %>
+            <div class="readding">
+                <div id="title">
+
+                </div>
+                <div id="sub-title">
+
+                </div>
+                <% texts.forEach(function(text) { %>
+                    <div class="textblock">
+                        <p><%=text %></p>
+                    </div>
+                    <% } %>
+            </div>
+        <% } %>
+    </div>
+    <% include footer %>
+</body>
+</html>
