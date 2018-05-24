@@ -19,13 +19,13 @@
     </div>
     <% include menu %>
     <div class="container">
+        <% if (typeof newPosts !== "undefined" &&
+        newPosts.length > 0) { %>
         <div class="new">
             <fieldset class="region">
                 <legend>Mới cập nhật</legend>
-                <% if (typeof posts !== "undefined" &&
-                posts.length > 0)
-                {
-                    posts.forEach(function(post) { %>
+                
+                <% newPosts.forEach(function(post) { %>
                         <div class="post">
                             <img src="<%=post['image']%>" />
                             <a href="<%=post['href']%>"
@@ -33,14 +33,18 @@
                                 <%=post['title']%>
                             </a>
                         </div>
-                <% })} %>
+                <% }) %>
             </fieldset>
         </div>
+        <% } %>
+        <% if (typeof favPosts !== "undefined" &&
+        favPosts.length > 0) { %>
         <div class="favorite">
             <fieldset class="region">
                 <legend>Được ưa thích</legend>
             </fieldset>
         </div>
+        <% } %>
     </div>
     <% include footer %>
 </body>

@@ -4,7 +4,7 @@ var router = express.Router();
 router.get('/', function(req, res, next) {
     res.render('home', 
         {
-          posts: [
+          newPosts: [
             {
               image: "images/a.jpg",
               title: "post1",
