@@ -4,10 +4,9 @@ var router = express.Router();
 router.get('/*', function(req, res, next) {
     res.render('read', 
         {
-            texts: [
-                "dsadsad",
-                "dsadsd"
-            ]
+          texts: [
+            "daffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffsdd",
+            "dasdffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffsd"]
         });
   });
 
