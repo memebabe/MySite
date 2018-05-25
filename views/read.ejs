@@ -12,19 +12,19 @@
     <% include menu %>
     <div class="container">
         <% if (typeof texts !== "undefined" &&
-        texts.lenght > 0) { %>
+        texts.length > 0) { %>
             <div class="readding">
                 <div id="title">
-
+                    title
                 </div>
                 <div id="sub-title">
-
+                    sub-title
                 </div>
                 <% texts.forEach(function(text) { %>
                     <div class="textblock">
                         <p><%=text %></p>
                     </div>
-                    <% } %>
+                    <% }) %>
             </div>
         <% } %>
     </div>
