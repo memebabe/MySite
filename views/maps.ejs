@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Simple Map</title>
-    <meta name="viewport" content="initial-scale=1.0">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
     <meta charset="utf-8">
-    <link rel="stylesheet" href="/stylesheets/style.css">
+    <title>Adding a Custom Overlay</title>
+    <link rel="stylesheet" href="/stylesheets/maps.css">
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCKXxpEWGuU5gAG3MfC3rMzRYCunvIQh0Y"></script>
+    <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCKXxpEWGuU5gAG3MfC3rMzRYCunvIQh0Y&callback=initMap"
+    async defer></script> -->
+    <script src="/javascripts/maps.js"></script>
   </head>
   <body>
-    <script src="/javascripts/maps.js"></script>
-    <div id="map" style="height: 100%;"></div>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCKXxpEWGuU5gAG3MfC3rMzRYCunvIQh0Y&callback=initMap"
-    async defer></script>
+    <div id="map"></div>
   </body>
 </html>

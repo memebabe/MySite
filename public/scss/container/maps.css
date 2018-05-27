@@ -1,0 +1,67 @@
+/*
+Error: Undefined variable: "$pinHeight".
+        on line 20 of E:\Workspace\GitHub\MySite\MySite\public\scss\container\maps.scss
+
+15: $pulseSize: 100px;
+16: .pin-wrap {
+17:     position: absolute;
+18:     width: $pinWidth;
+19:     height: $pinWidth;
+20:     margin-top: -$pinHeight;
+21:     margin-left: -$pinWidth/2;
+22:     transform-origin: 50% ($pinHeightFactor * 100%) 0;
+23: }
+24: 
+25: .pulse {
+
+Backtrace:
+E:\Workspace\GitHub\MySite\MySite\public\scss\container\maps.scss:20
+F:/_Softwave/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/variable.rb:49:in `_perform'
+F:/_Softwave/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/node.rb:50:in `perform'
+F:/_Softwave/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/unary_operation.rb:62:in `_perform'
+F:/_Softwave/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/node.rb:50:in `perform'
+F:/_Softwave/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:402:in `visit_prop'
+F:/_Softwave/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
+F:/_Softwave/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+F:/_Softwave/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `block in with_base'
+F:/_Softwave/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
+F:/_Softwave/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `with_base'
+F:/_Softwave/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `visit'
+F:/_Softwave/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:444:in `block (2 levels) in visit_rule'
+F:/_Softwave/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:444:in `map'
+F:/_Softwave/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:444:in `block in visit_rule'
+F:/_Softwave/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+F:/_Softwave/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:442:in `visit_rule'
+F:/_Softwave/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
+F:/_Softwave/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+F:/_Softwave/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `block in with_base'
+F:/_Softwave/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
+F:/_Softwave/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `with_base'
+F:/_Softwave/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `visit'
+F:/_Softwave/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+F:/_Softwave/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `map'
+F:/_Softwave/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+F:/_Softwave/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:171:in `block in visit_children'
+F:/_Softwave/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+F:/_Softwave/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:170:in `visit_children'
+F:/_Softwave/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+F:/_Softwave/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:190:in `visit_root'
+F:/_Softwave/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
+F:/_Softwave/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:161:in `visit'
+F:/_Softwave/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:10:in `visit'
+F:/_Softwave/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/root_node.rb:36:in `css_tree'
+F:/_Softwave/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+F:/_Softwave/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+F:/_Softwave/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:307:in `render_with_sourcemap'
+F:/_Softwave/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:391:in `run'
+F:/_Softwave/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:63:in `process_result'
+F:/_Softwave/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:52:in `parse'
+F:/_Softwave/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:19:in `parse!'
+F:/_Softwave/Koala/rubygems/gems/sass-3.5.2/bin/sass:13:in `<top (required)>'
+F:/_Softwave/Koala/bin/sass:22:in `load'
+F:/_Softwave/Koala/bin/sass:22:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Undefined variable: \"$pinHeight\".\A         on line 20 of E:\Workspace\GitHub\MySite\MySite\public\scss\container\maps.scss\A \A 15: $pulseSize: 100px;\A 16: .pin-wrap {\A 17:     position: absolute;\A 18:     width: $pinWidth;\A 19:     height: $pinWidth;\A 20:     margin-top: -$pinHeight;\A 21:     margin-left: -$pinWidth/2;\A 22:     transform-origin: 50% ($pinHeightFactor * 100%) 0;\A 23: }\A 24: \A 25: .pulse {"; }

@@ -1,0 +1,46 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0; }
+
+#map {
+  height: 100%; }
+
+.pulse {
+  position: absolute;
+  margin-top: -50px;
+  margin-left: -50px;
+  transform: rotateX(55deg); }
+
+.pulse::after {
+  display: block;
+  width: 100px;
+  height: 100px;
+  content: '';
+  animation: pulsate 1s ease-out;
+  animation-iteration-count: infinite;
+  opacity: 0;
+  border-radius: 50%; }
+
+@keyframes pulsate {
+  0% {
+    transform: scale(0.1, 0.1);
+    opacity: 0; }
+  50% {
+    opacity: 1; }
+  100% {
+    transform: scale(1.2, 1.2);
+    opacity: 0; } }
+.red::after {
+  box-shadow: 0 0 100px 50px #f91111;
+  animation-delay: 1.1s; }
+
+.yellow::after {
+  box-shadow: 0 0 50px 20px #f5f911;
+  animation-delay: 1.5s; }
+
+.green::after {
+  box-shadow: 0 0 100px 50px #19f911;
+  animation-delay: 1.1s; }
+
+/*# sourceMappingURL=maps.css.map */

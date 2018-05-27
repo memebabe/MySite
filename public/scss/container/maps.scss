@@ -1,22 +1,16 @@
-.readding {
-    text-align: center;
-    display: block;
-    line-height: 1;
-
-    .title {
-
-    }
-
-    .textblock {
-        max-width: 100%;
-        word-wrap: break-word;
-        text-align: left;
-    }
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+#map {
+    height: 100%;
 }
 
-$pinColor: #f93c11;
+$pinColorRed: #f91111;
+$pinColorYellow: #f5f911;
+$pinColorGreen: #19f911;
 $shadowOpacity: .5;
-$shadow-size: 50px;
 $pulseSize: 100px;
 .pulse {
     position: absolute;
@@ -30,12 +24,9 @@ $pulseSize: 100px;
     height: $pulseSize;
     content: '';
     animation: pulsate 1s ease-out;
-    animation-delay: 1.1s;
     animation-iteration-count: infinite;
     opacity: 0;
     border-radius: 50%;
-    box-shadow: 0 0 1px 2px rgba(0, 0, 0, $shadowOpacity);
-    box-shadow: 0 0 6px 3px rgba($pinColor, 1.0);
 }
 @keyframes pulsate {
     0% {
@@ -49,4 +40,19 @@ $pulseSize: 100px;
         transform: scale(1.2, 1.2);
         opacity: 0;
     }
-} 
+}
+
+.red::after {
+    box-shadow: 0 0 100px 50px rgba($pinColorRed, 1.0);
+    animation-delay: 1.1s;
+}
+
+.yellow::after {
+    box-shadow: 0 0 50px 20px rgba($pinColorYellow, 1.0);
+    animation-delay: 1.5s;
+}
+
+.green::after {
+    box-shadow: 0 0 100px 50px rgba($pinColorGreen, 1.0);
+    animation-delay: 1.1s;
+}
